@@ -7,7 +7,7 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-white shadow-sm z-50">
+    <header className="fixed top-0 left-0 w-full bg-white/50 backdrop-blur-8xl shadow-sm z-999">
       <div className="flex justify-between items-center h-20 px-6 md:px-10 lg:px-16">
         {/* Logo */}
         <Image
@@ -20,16 +20,16 @@ function Header() {
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex gap-10 text-gray-800 font-medium">
-          <li className="cursor-pointer hover:text-green-700 transition">
+          <li className="cursor-pointer text-lg text-gray-900 hover:text-green-700 transition">
             Home
           </li>
-          <li className="cursor-pointer hover:text-green-700 transition">
+          <li className="cursor-pointer text-lg text-gray-900 hover:text-green-700 transition">
             About
           </li>
-          <li className="cursor-pointer hover:text-green-700 transition">
+          <li className="cursor-pointer text-lg text-gray-900 hover:text-green-700 transition">
             Shop
           </li>
-          <li className="cursor-pointer hover:text-green-700 transition">
+          <li className="cursor-pointer text-lg text-gray-900 hover:text-green-700 transition">
             Festival
           </li>
         </ul>
